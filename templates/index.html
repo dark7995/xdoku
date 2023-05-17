@@ -1,0 +1,94 @@
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Xdoku</title>
+        <link rel="stylesheet" href={% static 'css/index.css' %}>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="header">
+                <div class="main_logo">
+                    <img src={% static "img/main-logo.png" %} alt="X">
+                    <div>doku</div>
+                </div>
+                <div class="nav">
+                    <ul class="nav_list">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Help</a>
+                        </li>
+                        <li>
+                            <a href="">Sign in</a>
+                        </li>
+                        <li>
+                            <a class="sign_up_btn" href="">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="game_section">
+                    <div class="game_board">
+                        <canvas id="game_canvas"></canvas>
+                    </div>
+                    <div class="game_pad">
+                        <div class="menu_pad">
+                            <div class="difficulty_section">
+                                Difficulty
+                                <ul class="difficulty_list">
+                                    <li>
+                                        <a href="" onclick="set_difficulty('easy')">
+                                            Easy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" onclick="set_difficulty('hard')">
+                                            Hard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" onclick="set_difficulty('expert')">
+                                            Expert
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="setting_pad">
+                            <div class="preference">
+                                <a href="preference">
+                                    <img src="" alt="">
+                                </a>
+                            </div>
+                            <span class="timer">00:00</span>
+                            <div class="pause_toggle" onclick="pause_toggle();">
+                                <div class="pause_toggle_icon"></div>
+                            </div>
+                        </div>
+                        <div class="input_pad">
+                            <input type="button" value="undo" onclick="pad_input('undo');">
+                            <input type="button" value="notes" onclick="pad_input('notes');">
+                            <input type="button" value="erase" onclick="pad_input('erase');">
+
+                            <input type="button" value="1" onclick="pad_input(1);">
+                            <input type="button" value="2" onclick="pad_input(2);">
+                            <input type="button" value="3" onclick="pad_input(3);">
+                            <input type="button" value="4" onclick="pad_input(4);">
+                            <input type="button" value="5" onclick="pad_input(5);">
+                            <input type="button" value="6" onclick="pad_input(6);">
+                            <input type="button" value="7" onclick="pad_input(7);">
+                            <input type="button" value="8" onclick="pad_input(8);">
+                            <input type="button" value="9" onclick="pad_input(9);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="info">Copyright 2023, 이영훈, all right reserved</div>
+            </div>
+        </div>
+    </body>
+</html>

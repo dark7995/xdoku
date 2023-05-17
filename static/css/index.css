@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 1280px;
+    background: rgb(200, 200, 200);
+}
+
+.header {
+    height: 130px;
+    background: rgb(91, 91, 91);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 300px
+}
+
+.main_logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_logo > div {
+    color: white;
+    font-size: 2.0em;
+    padding-top: 20px;
+}
+
+.nav {
+    width: 320px;
+}
+
+.nav_list > li {
+    float: left;
+    list-style-type: none;
+    width: 80px;
+    text-align: center;
+}
+
+.nav_list > li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.sign_up_btn {
+    border-radius: 10px;
+    background: white;
+    color: black!important;
+    border: 10px solid white;
+    transition: 0.3s;
+}
+
+.sign_up_btn:hover {
+    background: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+}
+
+.container {
+    margin: 0 300px;
+    background: rgb(255, 255, 255);
+    height: 750px;
+}
+
+.game_section {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.game_board > canvas {
+    width: 700px;
+    height: 700px;
+    border: 3px solid black;
+}
+
+.game_pad {
+    width: 400px;
+    display: grid;
+    grid-template-rows: 100px 100px 400px;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 50px 20px;
+}
+
+.menu_pad {
+    display: flex;
+
+}
+
+.difficulty_section {
+    width: 100%;
+    text-align: center;
+}
+
+.difficulty_list > ul {
+    margin-top: 20px;
+}
+
+.difficulty_list > li {
+    float: left;
+    width: 100px;
+    height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    list-style-type: none;
+}
+
+.difficulty_list > li > a {
+    color: black;
+    text-decoration: none;
+}
+
